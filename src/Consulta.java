@@ -1,7 +1,7 @@
 //import Proyecto.ClasePadre_Abstracta;
 
 public class Consulta extends Clase_Abstractaa{
-    
+
     @Override
     public void Transacciones(){
         System.out.println("====================================");

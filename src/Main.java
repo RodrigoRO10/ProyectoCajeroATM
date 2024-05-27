@@ -21,10 +21,11 @@ public class Main {
         	System.out.println("===============================================");
             System.out.println("Alguno de sus datos es erroneo, intente denuevo");
         	System.out.println("===============================================");
-   
+
         }
     }
     public String getNombre(){
         return getNombre();
     }
 }
+

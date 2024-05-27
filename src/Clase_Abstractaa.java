@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public abstract class Clase_Abstractaa {
-	String numero_cuenta;
+	/*String numero_cuenta;
     protected int transacciones, retiro, deposito,transferencia;
     private static int saldo;
     Scanner entrada = new Scanner(System.in);
@@ -11,14 +11,12 @@ public abstract class Clase_Abstractaa {
         String Nombre = "";
         do {
             do {
-                System.out.println(" Buenas tardes esta en un cajero automatico de BBVA");
+                System.out.println(" Bienvenido al cajero automatico de BBVA");
                 System.out.println(" Hoy es 31/10/2023");
                 System.out.println(" Porfavor seleccione una opción:");
-                System.out.println("    1. Consulta de saldo.");
-                System.out.println("    2. Retiro de efectivo.");
-                System.out.println("    3. Deposito de efectivo.");
-                System.out.println("    4. Hacer una transferencia");
-                System.out.println("    5. Salir.");
+                System.out.println("    1. Retiro.");
+                System.out.println("    2. Transferencia.");
+                System.out.println("    3. Salir.");
                 seleccion = entrada.nextInt();
 
                 if (seleccion >= 1 && seleccion <= 5) {
@@ -29,7 +27,7 @@ public abstract class Clase_Abstractaa {
                     System.out.println("=================================================");
                 }
             } while (bandera == 0);
-            
+
             if(seleccion == 1){
             	Clase_Abstractaa mensajero = new Consulta();
                 mensajero.Transacciones();
@@ -56,8 +54,8 @@ public abstract class Clase_Abstractaa {
 	public void Retiro(){
         retiro = entrada.nextInt();
     }
-    
-    public void Deposito(){
+
+    /*public void Deposito(){
         deposito = entrada.nextInt();
     }
     public void Transferencia(){
@@ -68,9 +66,9 @@ public abstract class Clase_Abstractaa {
     public int getSaldo(){
         return saldo;
     }
-    
+
     public void setSaldo(int saldo){
         this.saldo = saldo;
     }
-    
+*/
 }

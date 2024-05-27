@@ -1,12 +1,12 @@
 //import Proyecto.ClasePadre_Abstracta;
 
 public class Deposito extends Clase_Abstractaa{
-    
+/* 
     @Override
     public void Transacciones(){
         System.out.print("Cuanto deseas depositar: ");
-        Deposito();
-        
+        //Deposito();
+
         transacciones = getSaldo();
         setSaldo(transacciones + deposito);
         System.out.println("===================================");
@@ -16,5 +16,5 @@ public class Deposito extends Clase_Abstractaa{
         System.out.println("Tu saldo actual es: " + getSaldo());
         System.out.println("===================================");
     }
-    
+ */
 }
