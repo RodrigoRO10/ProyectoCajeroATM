@@ -22,13 +22,4 @@ public class Retiro extends Transaccion {
         System.out.println("Monto: " + monto);
         System.out.println("====================================");
     }
-    /*@Override
-    public void realizarTransaccion(Cuenta cuenta) {
-        if (getMonto() <= cuenta.getSaldo()) {
-            cuenta.setSaldo(cuenta.getSaldo() - getMonto());
-            System.out.println("Retiro realizado.");
-        } else {
-            System.out.println("Saldo insuficiente para realizar el retiro.");
-        }
-    }*/
 }

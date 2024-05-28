@@ -25,13 +25,15 @@ public class CajeroAutomatico {
         this.nombreBanco = nombreBanco;
     }
 
-    public void cajeroConsulta (CajeroAutomatico cajero, Cliente cliente, String fecha, Cuenta cuentaOrigen, Cuenta cuentaDestino){
+    public void cajeroTransacciones (CajeroAutomatico cajero, Cliente cliente, String fecha, Cuenta cuentaOrigen, Cuenta cuentaDestino){
         Scanner leer = new Scanner (System.in);
         int opcion; 
-        System.out.println(" Bienvenido al cajero automático de " + cajero.getLocalizacion());
+        System.out.println("Bienvenido al cajero automático de " + cajero.getLocalizacion());
         System.out.println("Fecha " + fecha);
+        System.out.println("Nombre: "+ cliente.getNombre());
+        System.out.println("Saldo actual: "+ cuentaOrigen.getSaldo());
         do {
-                System.out.println(" Porfavor seleccione una opción:");
+                System.out.println(" Por favor seleccione una opción:");
                 System.out.println("    1. Retiro.");
                 System.out.println("    2. Transferencia.");
                 System.out.println("    3. Salir.");

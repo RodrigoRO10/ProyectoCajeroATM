@@ -2,10 +2,10 @@ public class Cliente {
     public String identificador;
     public String nombre;
     public String direccion;
-    public String numeroTarjeta;
+    public int numeroTarjeta;
     public Cuenta cuenta;
 
-    public Cliente(String identificador, String nombre, String direccion, String numeroTarjeta, Cuenta cuenta) {
+    public Cliente(String identificador, String nombre, String direccion, int numeroTarjeta, Cuenta cuenta) {
         this.identificador = identificador;
         this.nombre = nombre;
         this.direccion = direccion;
@@ -37,11 +37,11 @@ public class Cliente {
         this.direccion = direccion;
     }
 
-    public String getNumeroTarjeta() {
+    public int getNumeroTarjeta() {
         return numeroTarjeta;
     }
 
-    public void setNumeroTarjeta(String numeroTarjeta) {
+    public void setNumeroTarjeta(int numeroTarjeta) {
         this.numeroTarjeta = numeroTarjeta;
     }
 
