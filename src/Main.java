@@ -3,29 +3,14 @@ import java.util.Scanner;
 public class Main {
 	static Scanner entrada = new Scanner(System.in);
     public static void main(String[] args) {
-        System.out.println("----------------------------------------------------");
-        System.out.println("Ingrese su Nombre:	(Catalina)");
-        String Nombre = entrada.nextLine();
-        System.out.println("Ingrese su Numero de cuenta:	(23140972)");
-        String Num_cuenta = entrada.nextLine();
-        System.out.println("Ingrese su Nip:		(8002)");
-        int Nip = entrada.nextInt();
-        System.out.println("----------------------------------------------------");
-        if(Nombre.equals("Catalina") && Num_cuenta.equals("23140972") && Nip==8002) {
-        	System.out.println("===============================================");
-        	System.out.print(Nombre);
-            Clase_Abstractaa mesajero = new Consulta();
-            mesajero.setSaldo(1700);
-            mesajero.Operaciones();
-        }else {
-        	System.out.println("===============================================");
-            System.out.println("Alguno de sus datos es erroneo, intente denuevo");
-        	System.out.println("===============================================");
+        CajeroAutomatico cajero = new CajeroAutomatico("Sucursal Centro", "BBVA");
+        Cuenta cuentaOrigen = new Cuenta("Cuenta de Ahorro", 23140972, 1700);
+        Cliente cliente = new Cliente("1", "Catalina", "Calle Elm", "23140972", cuentaOrigen);
+        Cuenta cuentaDestino = new Cuenta("Cuenta de Cheques", 98765432, 500);
+        String fecha = "25/05/2024";
 
-        }
-    }
-    public String getNombre(){
-        return getNombre();
+        cajero.cajeroConsulta(cajero, cliente, fecha, cuentaOrigen, cuentaDestino);
+
     }
 }
 

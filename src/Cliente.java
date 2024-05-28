@@ -1,9 +1,9 @@
 public class Cliente {
-    private String identificador;
-    private String nombre;
-    private String direccion;
-    private String numeroTarjeta;
-    private Cuenta cuenta;
+    public String identificador;
+    public String nombre;
+    public String direccion;
+    public String numeroTarjeta;
+    public Cuenta cuenta;
 
     public Cliente(String identificador, String nombre, String direccion, String numeroTarjeta, Cuenta cuenta) {
         this.identificador = identificador;

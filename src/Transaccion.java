@@ -1,12 +1,11 @@
-import java.util.Date;
 
 public abstract class Transaccion {
-    private String id;
-    private Date fecha;
-    private String tipo;
-    private int monto;
+    public String id;
+    public String fecha;
+    public String tipo;
+    public int monto;
 
-    public Transaccion(String id, Date fecha, String tipo, int monto) {
+    public Transaccion(String id, String fecha, String tipo, int monto) {
         this.id = id;
         this.fecha = fecha;
         this.tipo = tipo;
@@ -21,11 +20,11 @@ public abstract class Transaccion {
         this.id = id;
     }
 
-    public Date getFecha() {
+    public String getFecha() {
         return fecha;
     }
 
-    public void setFecha(Date fecha) {
+    public void setFecha(String fecha) {
         this.fecha = fecha;
     }
 
@@ -45,14 +44,5 @@ public abstract class Transaccion {
         this.monto = monto;
     }
 
-    public abstract void realizarTransaccion(Cuenta cuenta);
-
-    public void imprimirTicket(Cliente cliente, CajeroAutomatico cajero) {
-        System.out.println("====================================");
-        System.out.println("Cliente: " + cliente.getNombre());
-        System.out.println("Banco: " + cajero.getNombreBanco());
-        System.out.println("Tipo de transacción: " + tipo);
-        System.out.println("Monto: " + monto);
-        System.out.println("====================================");
-    }
+    public abstract void imprimirTicket(Cliente cliente, CajeroAutomatico cajero, Cuenta cuentaOrigen, Cuenta cuentaDestino);
 }

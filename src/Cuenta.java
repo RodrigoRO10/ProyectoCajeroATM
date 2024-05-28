@@ -1,27 +1,27 @@
 public class Cuenta {
-    private String tipo;
-    private String numeroCuenta;
-    private int saldo;
+    public String tipoCuenta;
+    public int numeroCuenta;
+    public int saldo;
 
-    public Cuenta(String tipo, String numeroCuenta, int saldo) {
-        this.tipo = tipo;
+    public Cuenta(String tipoCuenta, int numeroCuenta, int saldo) {
+        this.tipoCuenta = tipoCuenta;
         this.numeroCuenta = numeroCuenta;
         this.saldo = saldo;
     }
 
     public String getTipo() {
-        return tipo;
+        return tipoCuenta;
     }
 
     public void setTipo(String tipo) {
-        this.tipo = tipo;
+        this.tipoCuenta = tipo;
     }
 
-    public String getNumeroCuenta() {
+    public int getNumeroCuenta() {
         return numeroCuenta;
     }
 
-    public void setNumeroCuenta(String numeroCuenta) {
+    public void setNumeroCuenta(int numeroCuenta) {
         this.numeroCuenta = numeroCuenta;
     }
 
