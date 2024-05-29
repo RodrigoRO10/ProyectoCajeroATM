@@ -28,10 +28,14 @@ public class CajeroAutomatico {
     public void cajeroTransacciones (CajeroAutomatico cajero, Cliente cliente, String fecha, Cuenta cuentaOrigen, Cuenta cuentaDestino){
         Scanner leer = new Scanner (System.in);
         int opcion; 
+
+        System.out.println("======================================");
         System.out.println("Bienvenido al cajero automático de " + cajero.getLocalizacion());
         System.out.println("Fecha " + fecha);
         System.out.println("Nombre: "+ cliente.getNombre());
+        System.out.println("Tipo de cuenta: " + cuentaOrigen.tipoCuenta);
         System.out.println("Saldo actual: "+ cuentaOrigen.getSaldo());
+        System.out.println("======================================");
         do {
                 System.out.println(" Por favor seleccione una opción:");
                 System.out.println("    1. Retiro.");
